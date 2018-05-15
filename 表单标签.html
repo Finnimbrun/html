@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+    <h1>表单练习</h1>
+
+    <form action="http://www.baidu.com" method="post">
+        <input type="hidden" name="id" value="100">
+
+        <!--type的属性>
+            <!--文本输入-->
+            昵称:<input name="uname" type="text" value="LiMing"><br><br>
+            <!--密码文输入-->
+            密码:<input name="upwd" type="password" value="123213"><br><br>
+            <!--数字,可以限制最大最小值,间隔值-->
+            年龄:<input name="uage" type="number" max="150" min="1" step="7" value="18"><br><br>
+            <!--单项选择-->
+            性别:<input name="usex" type="radio" value="0">男
+                 <input name="usex" type="radio" value="1">女<br><br>
+            <!--多项选择-->
+            爱好:<input name="uhobby" type="checkbox" value="0">唱歌
+                 <input name="uhobby" type="checkbox" value="1">足球
+                 <input name="uhobby" type="checkbox" value="2">桌球
+                 <input name="uhobby" type="checkbox" value="3">篮球<br><br>
+            <!--文件上传-->
+            头像:<input name="uhead" type="file"><br><br>
+            <!--邮件域(H5)-->
+            email:<input name="uemail" type="email"><br><br>
+            <!--url域-->
+            url输入:<input name="uurl" type="url" value="http://"><br><br>
+            <!--用于应该包含一定范围内数字值的输入域，显示为滑动条-->
+            音量:<input name="urange" type="range" min="1" max="10" step="2" value="1"><br><br>
+            <!--datepicker选择器可以使用date,month,week,time,datetime,datetime-local  (H5)-->
+            本地日期:<input name="udate" type="datetime-local"><br><br>
+            <!--搜索域-->
+            搜索域:<input name="usearch" type="search"><br><br>
+            <!--颜色选择(H5)-->
+            颜色:<input name="ucolor" type="color"><br><br>
+            <!--提交按钮-->
+            <input type="submit" value="提交">
+            <!--重置--->
+            <input type="reset" value="重置"><br><br>
+            <!--提交按钮-->
+            <input type="button" value="提交按钮">
+            <!--图片按钮-->
+            <input type="image" src="images/reset.gif"><br><br>
+
+        <!--name属性: 表单项名,用于存储内容值的-->
+        value默认值:<input name="uinfo" value="1"><br><br>
+        <!--placeholder: 预期值的简短的提示信息-->
+        预期提示:<input name="uinfo" type="text" placeholder="123"><br><br>
+        <!--size属性: 输入框的宽度值-->
+        输入框宽度:<input name="uinfo" type="text" size="100"><br><br>
+        <!--maxlength属性 minlength属性: 输入框的输入内容的最大最小长度-->
+        输入内容最大最小宽度:<input name="uinfo" type="text" maxlength="5" minlength="2"><br><br>
+        <!--readonly属性: 对输入框只读属性-->
+        输入只读:<input name="uinfo" readonly><br><br>
+        <!--disabled属性: 禁用属性-->
+        输入禁用:<input name="uinfo" disabled><br><br>
+        <!--checked属性: 对选择框指定默认选项-->
+        指定默认选项:<input name="usex1" type="radio" value="0" checked>男
+             <input name="usex1" type="radio" value="1">女<br><br>
+        <!--accesskey属性: 指定快捷键(不常用) (IE:alt+键  火狐:alt+shift+键)-->
+        <!--tabindex属性: 通过数字指定tab键的切换顺序(不常用)-->
+        <!--src和alt是为图片按钮设置的
+        注意：reset重置按钮是将表单数据恢复到第一次打开时的状态，并不是清空
+            image图片按钮，默认具有提交表单功能。-->
+
+
+
+        <!--<select>...</select> 标签创建下拉列表。-->
+        <!--size：定义菜单中可见项目的数目，html5不支持
+                    disabled 当该属性为 true 时，会禁用该菜单。
+                    multiple 多选
+                    <option>... </option>  下拉选择项标签,用于嵌入到<select>标签中使用的;
+                        *value属性:下拉项的值
+                        *selected属性:默认下拉指定项.-->
+        创建下拉列表:<select name="userss">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select><br><br>
+
+        <!--<optgroup> html5标签--<optgroup> 标签定义选项组。此元素允许您组合选项-->
+        <br><br>
+        <select name="city">
+        <optgroup label="中国">
+            <option>河南</option>
+            <option>河北</option>
+            <option>山西</option>
+        </optgroup>
+        <optgroup label="日本">
+            <option>大阪</option>
+            <option>东京</option>
+            <option>东京</option>
+        </optgroup>
+    </select>
+
+        <br><br>
+        <!--<textarea>...</textarea> 多行的文本输入区域-->
+        <!--    name :定义名称,用于存储文本区域中的值。
+                cols ：规定文本区内可见的列数。
+                rows ：规定文本区内可见的行数。
+                disabled： 是否禁用
+                readonly： 只读
+                ...
+                默认值是在两个标签之间-->
+        多行的文本输入区域:<textarea name="infoss" cols="5" rows="6" >多行的文本输入区域</textarea><br><br>
+
+        <!--<button>...</button> 标签定义按钮-->
+        <button>button</button><br><br>
+
+        <!--标签为 <fieldset>、<figure> 以及 <details> 元素定义标题-->
+            <fieldset>
+                <legend>健康信息</legend>
+                身高：<input type="text" >
+                体重：<input type="text" >
+                    <figure>
+                        <IMG src="images/1.png" width="200" height="100">
+                    </figure>
+            </fieldset>
+
+        <br><br>
+        <!--行内框架-->
+        <iframe src="表单标签.html" height="100" width="500" frameborder="1"></iframe>
+
+        <br><br>
+        <!--<datalist> html5标签定义可选数据的列表。与 input 元素配合使用，就可以制作出输入值的下拉列表。-->
+        输入:
+        <input type="search" list="namelist" name="keywords"/>
+        <datalist id="namelist">
+            <option value="zhangsan">
+            <option value="zhangsanfeng">
+            <option value="zhangwuji">
+            <option value="lisi">
+            <option value="lixiaolong">
+        </datalist>
+
+        <br>
+        <!--audio标签-->
+        <audio src="./images/fun.mp4" controls="controls">
+            你的浏览器不支持播放
+        </audio>
+        <br>
+        <audio controls="controls">
+            <source src="./images/fun.mp4" type="audio/mpeg">
+            你的浏览器不支持播放
+        </audio>
+        <br>
+        <video controls="controls" width="400" height="500">
+            <source src="images/fun.mp4">
+        </video>
+    </form>
+</body>
+</html>
