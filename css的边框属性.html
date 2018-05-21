@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>css的边框属性</title>
+</head>
+<style type="text/css">
+    ul,li{
+        margin: 0; padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        width: 280px;height: 200px; margin: 5px; float: left;
+    }
+
+    li.c1{
+        border-width: 2px;
+        border-style: solid;
+        border-color: blue;
+    }
+    li.c2{
+        border-top:1px solid red;
+        border-right: 3px dotted green;
+        border-bottom: 5px dashed red;
+        border-left: 7px double red;
+    }
+    li.c3{
+        border:1px solid blue;
+        border-radius: 5px;
+    }
+    li.c4{
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        border-radius: 2px 5px;
+    }
+    li.c5{
+        border-width: 2px;
+        border-style: solid;
+        border-color: green;
+        border-radius: 5px 10px 15px;
+    }
+    li.c6{
+        border-width: 10px;
+        border-color: firebrick;
+        border-style: solid;
+        border-radius: 10px 30px 50px 70px;
+    }
+    li.c7{
+        border-width: 7px;
+        border-color: cornflowerblue;
+        border-style: solid;
+        border-radius: 15px;
+        box-shadow:-5px 5px 5px 10px rgba(150,100,50,0.6);
+    }
+    li.c7:hover{
+        box-shadow:-5px 5px 5px 10px rgba(150,100,150,0.6);
+    }
+</style>
+<body>
+    <h3>CSS 的边框属性</h3>
+    <ul>
+        <li class="c1"></li>
+        <li class="c2"></li>
+        <li class="c3"></li>
+        <li class="c4"></li>
+        <li class="c5"></li>
+        <li class="c6"></li>
+        <li class="c7"></li>
+        <li class="c8"></li>
+    </ul>
+</body>
+</html>
