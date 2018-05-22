@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的定位属性</title>
+    <style type="text/CSS">
+    div.aa{
+        width: 500px;height: 500px;
+        border: 1px solid red
+    }
+    div.bb{
+        width: 200px;height: 200px;
+        border: 1px solid blue
+    }
+    #p1{
+        position: absolute;
+        top: 50px;right: 100px;
+    }
+    #p2{
+        position: fixed;
+        top: 50px;left: -35px;
+        transition: left 1s ease-out
+    }
+    #p2:hover{
+        left: 0px;
+        
+    }
+    </style>
+</head>
+<body>
+    <h3>css的定位属性例子</h3>
+    <div class="aa">
+            <div class="bb"></div>
+    </div>
+    <img id="p1" src="images/1.gif">
+    <img id="p2" src="images/reset.gif">
+</body>
+</html>
